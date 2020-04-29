@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+
+    <EditText
+        android:id="@+id/register_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/register_college"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="85dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="College" />
+
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="143dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/register_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password" />
+
+    <EditText
+        android:id="@+id/register_reenterpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="260dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Re-enter Password" />
+
+    <EditText
+        android:id="@+id/register_codeforces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="320dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Codeforces Handle" />
+
+    <EditText
+        android:id="@+id/register_hackerrank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="305dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Hackerrank Handle" />
+
+    <EditText
+        android:id="@+id/register_codechef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="246dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Codechef Handle" />
+
+    <Button
+        android:id="@+id/register_register"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="165dp"
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="197dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="123dp"
+        android:text=" Already have an Account?"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/register_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="137dp"
+        android:text="SignIn"
+        android:textColor="#1565c0"
+        android:textSize="16sp" />
+</RelativeLayout>

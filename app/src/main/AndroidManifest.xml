@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hardikdua.codeforces">
+
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.hardikdua.codeforces.SearchFriends"
+            android:parentActivityName="com.hardikdua.codeforces.Profile"></activity>
+        <activity
+            android:name="com.hardikdua.codeforces.UpcomingContests"
+            android:parentActivityName="com.hardikdua.codeforces.Profile" />
+        <activity android:name=".FriendProfile" />
+        <activity
+            android:name="com.hardikdua.codeforces.UpdateProfile"
+            android:parentActivityName="com.hardikdua.codeforces.Profile" />
+        <activity android:name="com.hardikdua.codeforces.Profile" />
+        <activity android:name="com.hardikdua.codeforces.Login" />
+        <activity android:name="com.hardikdua.codeforces.Register" />
+        <activity android:name="com.hardikdua.codeforces.MainActivity" />
+        <activity
+            android:name="com.hardikdua.codeforces.SplashScreen"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/profile_dl"
+    android:background="#1976d2"
+    >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Profile">
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:gravity="start"
+            android:backgroundTint="#1976d2">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="-10dp"
+                android:src="@drawable/coverpic" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_profilepic"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="45dp"
+                app:civ_border_width="5dp"
+                app:civ_border_color="#1976d2"
+                android:src="@drawable/defaultpic" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profile_floatbtn"
+                    android:layout_margin="30dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_code_black_24dp"
+                    />
+
+            <TextView
+                android:id="@+id/profile_codeforces"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="-3dp"
+                android:layout_marginTop="259dp"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="2dp"
+                android:text="Codeforces"
+                android:textSize="28sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/profile_codeforces_rating"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_above="@+id/profile_codeforces_rating_num"
+                android:layout_alignStart="@+id/profile_codeforces_rating_num"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="-340dp"
+                android:gravity="center"
+                android:text="Rating"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profile_codeforces_friends"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_above="@+id/profile_codeforces_contest_num"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="145dp"
+                android:layout_marginEnd="136dp"
+                android:layout_marginBottom="-340dp"
+                android:text="Friends"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profile_codeforces_contest"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="299dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="-340dp"
+                android:gravity="center"
+                android:text="Contest"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profile_codeforces_rating_num"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="332dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profile_codeforces_friends_num"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="332dp"
+                android:layout_marginEnd="135dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profile_codeforces_contest_num"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="332dp"
+                android:layout_marginEnd="2dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/navigation_menu"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/navigation_logout"
+                android:gravity="left"
+                android:text="          Logout"
+                android:paddingRight="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_power_settings_new_black_24dp"
+                />
+        </LinearLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>
